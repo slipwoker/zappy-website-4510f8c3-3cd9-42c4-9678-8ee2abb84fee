@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://paris-guide-4510f8c3.zappy5.app/sitemap.xml

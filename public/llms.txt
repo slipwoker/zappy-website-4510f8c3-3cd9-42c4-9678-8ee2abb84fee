@@ -1,0 +1,57 @@
+# Paris Guide — Generative Engine Optimization Map
+
+> A תיירות business.
+
+---
+
+## Pages
+
+### Home
+https://paris-guide-4510f8c3.zappy5.app
+גלו את פריז עם המדריכים המקומיים שלנו. סיורים מותאמים אישית למשפחות, חוויות אותנטיות ומסלולים ייחודיים. ביטול חינם עד 24 שעות.
+
+### Attractions
+https://paris-guide-4510f8c3.zappy5.app/attractions
+גלו את האטרקציות המרהיבות של פריז - מגדל אייפל, לובר, נוטרדאם ועוד. מידע מפורט, טיפים ותכנון מסלולים למשפחות.
+
+### About
+https://paris-guide-4510f8c3.zappy5.app/about
+הכירו את הצוות של Paris Guide - פריזאים ילידיים עם תשוקה לעיר. למדו על הערכים שלנו, הסיפור שלנו ומה הופך אותנו למדריכים המובילים למשפחות.
+
+### Contact
+https://paris-guide-4510f8c3.zappy5.app/contact
+צרו קשר עם המדריכים המקומיים שלנו ותכננו את חוויית פריז המושלמת למשפחה. זמינים בעברית, טלפון, אימייל ו-WhatsApp.
+
+## Legal & Policy
+
+### Privacy Policy
+https://paris-guide-4510f8c3.zappy5.app/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://paris-guide-4510f8c3.zappy5.app/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://paris-guide-4510f8c3.zappy5.app/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+# Business Context (for LLM understanding)
+
+## About Paris Guide
+Paris Guide is a business in the תיירות industry.
+
+## Target Audience
+תיירים ומשפחות מטיילות
+
+## Industry
+תיירות
+
+---
+
+# Additional Resources
+
+- **Sitemap**: https://paris-guide-4510f8c3.zappy5.app/sitemap.xml
+- **Robots.txt**: https://paris-guide-4510f8c3.zappy5.app/robots.txt

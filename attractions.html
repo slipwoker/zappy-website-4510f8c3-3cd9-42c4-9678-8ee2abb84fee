@@ -1,0 +1,1263 @@
+<!DOCTYPE html><html lang="he" dir="rtl"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>אטרקציות בפריז - המדריך המלא | Paris Guide</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/styles.css">
+
+    <meta name="keywords" content="paris guided tour packages, paris private tours, private tour of versailles from paris, מדריך טיולים">
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon-512x512.png">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<style>
+/* Zappy Attribution Header Styles */
+.zappy-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  box-shadow: 0px 4px 19px 0px rgba(0,0,0,0.04);
+  padding: 16px 10px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  color: #4a4a4a;
+  line-height: 21px;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 21px;
+  direction: ltr !important;
+  unicode-bidi: isolate;
+}
+
+    .zappy-header p {
+      margin: 0;
+      padding: 0;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      white-space: nowrap;
+      display: inline-block;
+      vertical-align: baseline;
+      margin-bottom: 0 !important;
+      direction: ltr !important;
+    }
+
+.zappy-header .zappy-link {
+  font-weight: 700;
+  color: #4a4a4a;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.zappy-header .zappy-link:hover {
+  opacity: 0.7;
+}</style>
+    <!-- Cookie Consent -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
+    <!-- Mickidum Accessibility Toolbar -->
+    <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+<!-- Zappy Analytics -->
+<script>
+(function() {
+  'use strict';
+  
+  // Configuration
+  var config = {
+    websiteId: '4510f8c3-3cd9-42c4-9678-8ee2abb84fee',
+    apiUrl: 'http://localhost:5001/api/analytics/track',
+    sessionDuration: 30 * 60 * 1000, // 30 minutes
+    visitorDuration: 30 * 24 * 60 * 60 * 1000, // 30 days
+    trackPageViews: true,
+    trackClicks: true,
+    trackFormSubmissions: true
+  };
+  
+  // Generate or retrieve persistent visitor ID (30 days)
+  function getVisitorId() {
+    var visitorKey = 'zappy_visitor_' + config.websiteId;
+    var visitor = null;
+    
+    try {
+      visitor = localStorage.getItem(visitorKey);
+      if (visitor) {
+        var visitorData = JSON.parse(visitor);
+        var now = Date.now();
+        
+        // Check if visitor ID is still valid (30 days)
+        if (now - visitorData.created < config.visitorDuration) {
+          // Update last seen timestamp
+          visitorData.lastSeen = now;
+          localStorage.setItem(visitorKey, JSON.stringify(visitorData));
+          return visitorData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: LocalStorage not available');
+    }
+    
+    // Generate new visitor ID
+    var newVisitorId = 'zv_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      localStorage.setItem(visitorKey, JSON.stringify({
+        id: newVisitorId,
+        created: Date.now(),
+        lastSeen: Date.now()
+      }));
+    } catch (e) {
+      // Continue without local storage
+    }
+    
+    return newVisitorId;
+  }
+  
+  // Generate or retrieve session ID (30 minutes)
+  function getSessionId() {
+    var sessionKey = 'zappy_session_' + config.websiteId;
+    var session = null;
+    
+    try {
+      session = sessionStorage.getItem(sessionKey);
+      if (session) {
+        var sessionData = JSON.parse(session);
+        var now = Date.now();
+        
+        // Check if session is still valid
+        if (now - sessionData.timestamp < config.sessionDuration) {
+          // Update timestamp
+          sessionData.timestamp = now;
+          sessionStorage.setItem(sessionKey, JSON.stringify(sessionData));
+          return sessionData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: SessionStorage not available');
+    }
+    
+    // Generate new session ID
+    var newSessionId = 'zs_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      sessionStorage.setItem(sessionKey, JSON.stringify({
+        id: newSessionId,
+        timestamp: Date.now()
+      }));
+    } catch (e) {
+      // Continue without session storage
+    }
+    
+    return newSessionId;
+  }
+  
+  var visitorId = getVisitorId();
+  var sessionId = getSessionId();
+  
+  // Track an event
+  function trackEvent(eventType, data) {
+    data = data || {};
+    
+    var eventData = {
+      website_id: config.websiteId,
+      event_type: eventType,
+      page_path: window.location.pathname,
+      referrer: document.referrer || 'direct',
+      visitor_id: visitorId,
+      session_id: sessionId,
+      metadata: data
+    };
+    
+    // Use sendBeacon if available (better for page unload events)
+    if (navigator.sendBeacon) {
+      var blob = new Blob([JSON.stringify(eventData)], { type: 'application/json' });
+      navigator.sendBeacon(config.apiUrl, blob);
+    } else {
+      // Fallback to fetch
+      fetch(config.apiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(eventData),
+        keepalive: true
+      }).catch(function(error) {
+        console.warn('Zappy Analytics: Failed to track event', error);
+      });
+    }
+  }
+  
+  // Track page view
+  if (config.trackPageViews) {
+    trackEvent('pageview', {
+      title: document.title,
+      url: window.location.href
+    });
+  }
+  
+  // Track clicks on important elements
+  if (config.trackClicks) {
+    document.addEventListener('click', function(e) {
+      var target = e.target;
+      
+      // Track button clicks (counted as actions)
+      if (target.tagName === 'BUTTON' || target.closest('button')) {
+        var button = target.tagName === 'BUTTON' ? target : target.closest('button');
+        trackEvent('click', {
+          element: 'button',
+          text: button.textContent.trim().substring(0, 100),
+          id: button.id || null,
+          class: button.className || null
+        });
+      }
+      
+      // Track link clicks (navigation - not counted as actions)
+      else if (target.tagName === 'A' || target.closest('a')) {
+        var link = target.tagName === 'A' ? target : target.closest('a');
+        trackEvent('navigation', {
+          element: 'link',
+          text: link.textContent.trim().substring(0, 100),
+          href: link.href,
+          external: link.hostname !== window.location.hostname
+        });
+      }
+    }, true);
+  }
+  
+  // Track form submissions
+  if (config.trackFormSubmissions) {
+    document.addEventListener('submit', function(e) {
+      var form = e.target;
+      
+      trackEvent('form_submit', {
+        form_id: form.id || null,
+        form_name: form.name || null,
+        form_action: form.action || null,
+        form_method: form.method || 'GET'
+      });
+    }, true);
+  }
+  
+  // Track time on page (send on page unload)
+  var pageLoadTime = Date.now();
+  
+  window.addEventListener('beforeunload', function() {
+    var timeOnPage = Math.floor((Date.now() - pageLoadTime) / 1000); // in seconds
+    
+    trackEvent('page_unload', {
+      time_on_page: timeOnPage,
+      page_path: window.location.pathname
+    });
+  });
+  
+  // Expose tracking function globally for custom events
+  window.zappyAnalytics = {
+    track: trackEvent,
+    getVisitorId: function() { return visitorId; },
+    getSessionId: function() { return sessionId; }
+  };
+  
+})();
+</script>
+<!-- End Zappy Analytics -->
+
+    <style id="zappy-mobile-submenu-styles">
+      /* Mobile submenu accordion styles */
+      @media (max-width: 768px) {
+        .nav-menu .sub-menu, nav .sub-menu, .navbar .sub-menu, #navMenu .sub-menu {
+          position: static !important;
+          transform: none !important;
+          box-shadow: none !important;
+          background: transparent !important;
+          margin-top: 0 !important;
+          max-height: 0;
+          overflow: hidden;
+          opacity: 0;
+          visibility: hidden;
+          transition: max-height 0.3s ease, opacity 0.3s ease, visibility 0.3s ease, padding 0.3s ease;
+          padding: 0 !important;
+          border-radius: 0 !important;
+        }
+        .sub-menu.mobile-expanded {
+          max-height: 500px !important;
+          opacity: 1 !important;
+          visibility: visible !important;
+          padding: 8px 0 8px 16px !important;
+        }
+        [dir="rtl"] .sub-menu.mobile-expanded, html[lang="he"] .sub-menu.mobile-expanded, html[lang="ar"] .sub-menu.mobile-expanded {
+          padding: 8px 16px 8px 0 !important;
+        }
+        .nav-menu li:hover > .sub-menu, nav li:hover > .sub-menu, .navbar li:hover > .sub-menu, #navMenu li:hover > .sub-menu {
+          opacity: 0; visibility: hidden; pointer-events: none;
+        }
+        .nav-menu li > .sub-menu.mobile-expanded, nav li > .sub-menu.mobile-expanded, .navbar li > .sub-menu.mobile-expanded, #navMenu li > .sub-menu.mobile-expanded {
+          opacity: 1 !important; visibility: visible !important; pointer-events: auto !important;
+        }
+        .nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu) {
+          display: flex !important; flex-wrap: wrap !important; align-items: center !important;
+        }
+        .nav-menu li:has(.sub-menu) > a, nav li:has(.sub-menu) > a, .navbar li:has(.sub-menu) > a, #navMenu li:has(.sub-menu) > a {
+          flex: 1 !important;
+        }
+        .mobile-submenu-toggle {
+          display: flex !important; align-items: center !important; justify-content: center !important;
+          width: 44px !important; height: 44px !important; background: transparent !important;
+          border: none !important; cursor: pointer !important; padding: 0 !important; margin: 0 !important;
+          flex-shrink: 0 !important; -webkit-tap-highlight-color: transparent;
+        }
+        .mobile-submenu-toggle::after {
+          content: '' !important; display: block !important; width: 0 !important; height: 0 !important;
+          border-left: 6px solid transparent !important; border-right: 6px solid transparent !important;
+          border-top: 7px solid currentColor !important; transition: transform 0.3s ease !important;
+        }
+        .mobile-submenu-toggle.expanded::after { transform: rotate(180deg) !important; }
+        .nav-menu li:has(.sub-menu) > .sub-menu, nav li:has(.sub-menu) > .sub-menu, .navbar li:has(.sub-menu) > .sub-menu, #navMenu li:has(.sub-menu) > .sub-menu {
+          flex-basis: 100% !important; width: 100% !important;
+        }
+        .sub-menu a { padding: 10px 0 !important; display: block !important; font-size: 14px !important; }
+        .sub-menu a:hover { background-color: transparent !important; }
+      }
+      @media (min-width: 769px) { .mobile-submenu-toggle { display: none !important; } }
+    </style>
+</head>
+<body>
+
+<!-- Zappy Attribution Header -->
+<div id="zappy-attribution-header" class="zappy-header" style="display: none;">
+  <p>Happily created by&nbsp;<a href="https://zappy5.com" target="_blank" rel="noopener noreferrer" class="zappy-link">Zappy</a></p>
+</div>
+    <nav class="navbar"><button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+            <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+            </svg>
+            <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display:none;">
+                <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+            </svg>
+        </button><button class="phone-header-btn" aria-label="Call">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+        </button><div class="nav-container"><div class="nav-right-group"><div class="nav-brand"><a href="/" class="logo-link" aria-label="Home"><img class="logo" src="/assets/business-logo.webp" alt="Paris Guide"></a></div><ul class="nav-menu" id="navMenu">
+            <li><a href="/attractions" class="nav-link active">אטרקציות</a></li>
+            <li><a href="/about" class="nav-link">אודות</a></li>
+            <li class="mobile-contact-link"><a href="/contact" class="nav-link nav-cta">צור קשר</a></li>
+        </ul></div><div class="nav-cta-container">
+          <li class="nav-cta-item">
+            <a href="/contact" class="nav-cta-btn">צור קשר</a>
+          </li>
+        </div></div></nav>
+
+    <main>
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="page-hero-background">
+                <img data-placeholder="paris-attractions-hero" data-context="beautiful Paris cityscape with multiple landmarks visible" width="1920" height="600" src="/assets/site-attractions-image-2.webp" alt="אטרקציות פריז">
+                <div class="page-hero-gradient"></div>
+            </div>
+            <div class="container">
+                <div class="page-hero-content">
+                    <span class="page-badge">גלו את פריז</span>
+                    <h1>האטרקציות המובילות בפריז - paris guided tour packages</h1>
+                    <p>ממצפה מגדל אייפל ועד לגלריות הלובר - המדריך המלא שלכם לחוויות הבלתי נשכחות בעיר האורות</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Attractions Categories -->
+        <section class="attractions-categories">
+            <div class="container">
+                <div class="category-tabs">
+                    <button class="category-tab active" data-category="all">
+                        <i class="fas fa-th"></i>
+                        <span>הכל</span>
+                    </button>
+                    <button class="category-tab" data-category="landmarks">
+                        <i class="fas fa-landmark"></i>
+                        <span>ציוני דרך</span>
+                    </button>
+                    <button class="category-tab" data-category="museums">
+                        <i class="fas fa-university"></i>
+                        <span>מוזיאונים</span>
+                    </button>
+                    <button class="category-tab" data-category="parks">
+                        <i class="fas fa-tree"></i>
+                        <span>פארקים</span>
+                    </button>
+                    <button class="category-tab" data-category="family">
+                        <i class="fas fa-users"></i>
+                        <span>למשפחות</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Attractions -->
+        <section class="featured-attractions">
+            <div class="container">
+                <div class="section-intro">
+                    <h2>האטרקציות המובילות עם paris private tours</h2>
+                    <p>החוויות הכי מומלצות שכדאי להתחיל איתן - בין אם אתם מחפשים paris guided tour packages מקיפים או paris private tours אישיים ומותאמים אישית. כמדריך טיולים מנוסה, אני ממליץ לתכנן את הביקור שלכם מראש ולבחור את האטרקציות שמתאימות לכם ביותר.</p>
+                </div>
+
+                <div class="attractions-showcase">
+                    <div class="showcase-main">
+                        <div class="attraction-featured-card">
+                            <div class="featured-image">
+                                <img data-placeholder="eiffel-tower-detailed" data-context="Eiffel Tower from ground level, majestic view" width="800" height="900" src="/assets/site-attractions-image-3.webp" alt="מגדל אייפל">
+                                <div class="featured-badges">
+                                    <span class="badge-premium">מומלץ ביותר</span>
+                                    <span class="badge-popular">פופולרי</span>
+                                </div>
+                            </div>
+                            <div class="featured-content">
+                                <div class="featured-header">
+                                    <h3>מגדל אייפל - הסמל של פריז</h3>
+                                    <div class="featured-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <span>4.8 (12,450 ביקורות)</span>
+                                    </div>
+                                </div>
+                                <p class="featured-description">מגדל אייפל הוא ללא ספק הסמל המפורסם ביותר של פריז ושל צרפת כולה. המגדל שנבנה ב-1889 לתערוכה העולמית, מתנשא לגובה של 330 מטרים ומציע נוף עוצר נשימה על כל העיר. עלו למצפה בקומה השנייה או השלישית ותיהנו מנוף פנורמי מדהים. רוב paris guided tour packages כוללים ביקור במגדל האייקוני הזה, והוא חובה לכל מבקר בעיר האורות. כמדריך טיולים, אני ממליץ להזמין כרטיסים מראש כדי לחסוך זמן המתנה יקר.</p>
+                                
+                                <div class="featured-highlights">
+                                    <div class="highlight-item">
+                                        <i class="fas fa-clock"></i>
+                                        <div>
+                                            <strong>משך הביקור</strong>
+                                            <span>2-3 שעות</span>
+                                        </div>
+                                    </div>
+                                    <div class="highlight-item">
+                                        <i class="fas fa-ticket-alt"></i>
+                                        <div>
+                                            <strong>כרטיסים</strong>
+                                            <span>הזמינו מראש</span>
+                                        </div>
+                                    </div>
+                                    <div class="highlight-item">
+                                        <i class="fas fa-child"></i>
+                                        <div>
+                                            <strong>מתאים לילדים</strong>
+                                            <span>כל הגילאים</span>
+                                        </div>
+                                    </div>
+                                    <div class="highlight-item">
+                                        <i class="fas fa-wheelchair"></i>
+                                        <div>
+                                            <strong>נגישות</strong>
+                                            <span>מלאה</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="featured-tips">
+                                    <h4>טיפים חשובים למדריך טיולים בפריז</h4>
+                                    <ul>
+                                        <li>הגיעו מוקדם בבוקר או אחרי השעה 17:00 כדי להימנע מהמונים - טיפ חשוב מכל מדריך טיולים</li>
+                                        <li>כדאי לקנות כרטיסים אונליין מראש או לבחור paris guided tour packages שכוללים דילוג על תורים - התורים יכולים להיות ארוכים מאוד</li>
+                                        <li>אפשר לעלות במדרגות לקומה השנייה - זול יותר ופחות צפוף, או לבחור paris private tours עם גישה מהירה</li>
+                                        <li>בלילה המגדל נוצץ כל שעה שלמה במשך 5 דקות - מומלץ לצפות מגני טרוקדרו, חוויה שכל מדריך טיולים ממליץ עליה</li>
+                                    </ul>
+                                </div>
+
+                                <a href="/contact" class="btn-primary">תכננו את הביקור שלכם</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="showcase-sidebar">
+                        <div class="quick-attraction-card">
+                            <img data-placeholder="louvre-quick" data-context="Louvre Museum pyramid entrance" width="350" height="250" src="/assets/site-attractions-image-4.webp" alt="לובר">
+                            <div class="quick-content">
+                                <h4>מוזיאון הלובר - חלק מ-paris guided tour packages</h4>
+                                <div class="quick-rating">
+                                    <i class="fas fa-star"></i> 4.7
+                                </div>
+                                <p>המוזיאון הגדול והמפורסם בעולם - מוזיאון הלובר מכיל למעלה מ-35,000 יצירות אמנות, כולל המונה ליזה המפורסמת, ונוס דה מילו והניצחון של סמותרקה. המבנה עצמו הוא ארמון מלכותי לשעבר עם אדריכלות מרהיבה. paris private tours במוזיאון מאפשרים לכם לדלג על התורים הארוכים וליהנות מהסברים מקצועיים על יצירות המופת. הביקור יכול לקחת בין 3-4 שעות, תלוי בעניין שלכם.</p>
+                                <div class="quick-meta">
+                                    <span><i class="fas fa-clock"></i> 3-4 שעות</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="quick-attraction-card">
+                            <img data-placeholder="versailles-quick" data-context="Palace of Versailles exterior and gardens" width="350" height="250" src="/assets/site-attractions-image-5.webp" alt="ורסאי">
+                            <div class="quick-content">
+                                <h4>ארמון ורסאי</h4>
+                                <div class="quick-rating">
+                                    <i class="fas fa-star"></i> 4.9
+                                </div>
+                                <p>הארמון המלכותי המפואר - ארמון ווסאי (Versailles) נמצא במרחק של כ-20 ק"מ מפריז והוא אחד האתרים המרשימים ביותר בצרפת. private tour of versailles from paris היא חוויה בלתי נשכחת שכוללת את הגנים המפוארים, אולם המראות המפורסם וחדרי המגורים המלכוטיים. כמדריך טיולים, אני ממליץ להקדיש יום שלם לביקור בארמון ובגנים המדהימים שלו. הארמון היה בית המלוכה הצרפתית עד המהפכה הצרפתית.</p>
+                                <div class="quick-meta">
+                                    <span><i class="fas fa-clock"></i> יום שלם</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="quick-attraction-card">
+                            <img data-placeholder="sacre-coeur-quick" data-context="Sacre Coeur basilica white architecture" width="350" height="250" src="/assets/site-attractions-image-6.webp" alt="סאקרה קר">
+                            <div class="quick-content">
+                                <h4>בזיליקת סאקרה קר</h4>
+                                <div class="quick-rating">
+                                    <i class="fas fa-star"></i> 4.8
+                                </div>
+                                <p>הבזיליקה הלבנה במונמארטר - סאקרה קר (Sacré-Cœur) יושבת על גבעת מונמארטר הגבוהה ביותר בפריז ומציעה נוף מרהיב על העיר. השכונה האמנותית מונמארטר מלאה בקסם בוהמייני, גלריות אמנות ובתי קפה צרפתיים אותנטיים. paris private tours באזור זה כוללים גם ביקור בכיכר טרטר המפורסמת, שם אמנים מציירים דיוקנאות. הבזיליקה נבנתה בסגנון רומנו-ביזנטי והושלמה ב-1914.</p>
+                                <div class="quick-meta">
+                                    <span><i class="fas fa-clock"></i> 1-2 שעות</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- All Attractions Grid -->
+        <section class="all-attractions">
+            <div class="container-wide">
+                <h2 class="section-title centered">כל האטרקציות</h2>
+                
+                <div class="attractions-grid-enhanced">
+                    <!-- Arc de Triomphe -->
+                    <div class="attraction-card-enhanced">
+                        <div class="card-image">
+                            <img data-placeholder="arc-de-triomphe" data-context="Arc de Triomphe monument in Paris" width="400" height="300" src="/assets/site-attractions-image-7.webp" alt="שער הניצחון">
+                            <div class="card-category">ציוני דרך</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>שער הניצחון</h3>
+                            <div class="card-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.6</span>
+                            </div>
+                            <p>האנדרטה המפורסמת במרכז כיכר שארל דה גול - שער הניצחון (Arc de Triomphe) הוא אחד הסמלים המפורסמים ביותר של פריז. האנדרטה הוקמה לכבוד ניצחונות צבא נפוליאון ומציעה נוף פנורמי מרהיב על שאנז אליזה וכל העיר. רוב paris guided tour packages כוללים עצירה באנדרטה המרשימה הזו. תחת השער נמצא קבר החייל האלמוני עם להבה נצחית.</p>
+                            <div class="card-meta">
+                                <span><i class="fas fa-clock"></i> 1 שעה</span>
+                                <span><i class="fas fa-walking"></i> הליכה</span>
+                            </div>
+                            <a href="/contact" class="card-btn">תכננו ביקור</a>
+                        </div>
+                    </div>
+
+                    <!-- Notre-Dame -->
+                    <div class="attraction-card-enhanced">
+                        <div class="card-image">
+                            <img data-placeholder="notre-dame-cathedral" data-context="Notre Dame cathedral Gothic architecture" width="400" height="300" src="/assets/site-attractions-image-8.webp" alt="נוטרדאם">
+                            <div class="card-category">אדריכלות</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>קתדרלת נוטרדאם</h3>
+                            <div class="card-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>4.7</span>
+                            </div>
+                            <p>הקתדרלה הגותית המפורסמת מהמאה ה-12 - נוטרדאם דה פארי היא אחד מסמלי פריז ומופת של אדריכלות גותית צרפתית. למרות השריפה ב-2019, הקתדרלה נותרה אתר חשוב ומרשים מבחוץ. כמדריך טיולים, אני ממליץ לבקר באי דה לה סיטה שבו נמצאת הקתדרלה וליהנות מהאווירה ההיסטורית של האזור. paris private tours באזור כוללים גם את סנט שאפל המדהימה עם חלונות הוויטראז' שלה.</p>
+                            <div class="card-meta">
+                                <span><i class="fas fa-clock"></i> 1-2 שעות</span>
+                                <span><i class="fas fa-history"></i> היסטורי</span>
+                            </div>
+                            <a href="/contact" class="card-btn">תכננו ביקור</a>
+                        </div>
+                    </div>
+
+                    <!-- Musée d'Orsay -->
+                    <div class="attraction-card-enhanced">
+                        <div class="card-image">
+                            <img data-placeholder="musee-dorsay" data-context="Musee d'Orsay museum building with clock" width="400" height="300" src="/assets/site-attractions-image-9.webp" alt="מוזיאון דאורסיי">
+                            <div class="card-category">מוזיאונים</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>מוזיאון ד'אורסיי</h3>
+                            <div class="card-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                            <p>מוזיאון האמנות האימפרסיוניסטית והפוסט-אימפרסיוניסטית, המציג יצירות של מונה, רנואר, ואן גוך ועוד.</p>
+                            <div class="card-meta">
+                                <span><i class="fas fa-clock"></i> 2-3 שעות</span>
+                                <span><i class="fas fa-palette"></i> אמנות</span>
+                            </div>
+                            <a href="/contact" class="card-btn">תכננו ביקור</a>
+                        </div>
+                    </div>
+
+                    <!-- Champs-Élysées -->
+                    <div class="attraction-card-enhanced">
+                        <div class="card-image">
+                            <img data-placeholder="champs-elysees-avenue" data-context="Champs Elysees avenue with shops and cafes" width="400" height="300" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23FF0083;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23FF008320;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad)'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial, sans-serif' font-size='18' fill='white' text-anchor='middle' dy='.3em' font-weight='500'%3E%D7%A9%D7%90%D7%A0%D7%96%20%D7%90%D7%9C%D7%99%D7%96%D7%94%3C/text%3E%3C/svg%3E" alt="שאנז אליזה">
+                            <div class="card-category">קניות</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>שדרות שאנז אליזה</h3>
+                            <div class="card-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>4.5</span>
+                            </div>
+                            <p>השדרה המפורסמת ביותר בעולם, עם חנויות יוקרה, בתי קפה מפורסמים ואווירה פריזאית אותנטית.</p>
+                            <div class="card-meta">
+                                <span><i class="fas fa-clock"></i> 1-2 שעות</span>
+                                <span><i class="fas fa-shopping-bag"></i> קניות</span>
+                            </div>
+                            <a href="/contact" class="card-btn">תכננו ביקור</a>
+                        </div>
+                    </div>
+
+                    <!-- Montmartre -->
+                    <div class="attraction-card-enhanced">
+                        <div class="card-image">
+                            <img data-placeholder="montmartre-district" data-context="Montmartre artistic district with charming streets" width="400" height="300" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23FF0083;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23FF008320;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad)'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial, sans-serif' font-size='18' fill='white' text-anchor='middle' dy='.3em' font-weight='500'%3E%D7%9E%D7%95%D7%A0%D7%9E%D7%90%D7%A8%D7%98%D7%A8%3C/text%3E%3C/svg%3E" alt="מונמארטר">
+                            <div class="card-category">שכונות</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>שכונת מונמארטר</h3>
+                            <div class="card-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                            <p>השכונה האמנותית והבוהמית של פריז, עם רחובות מרוצפים מקסימים, אמנים ברחוב וכיכר הציירים.</p>
+                            <div class="card-meta">
+                                <span><i class="fas fa-clock"></i> 2-3 שעות</span>
+                                <span><i class="fas fa-paint-brush"></i> אמנות</span>
+                            </div>
+                            <a href="/contact" class="card-btn">תכננו ביקור</a>
+                        </div>
+                    </div>
+
+                    <!-- Luxembourg Gardens -->
+                    <div class="attraction-card-enhanced">
+                        <div class="card-image">
+                            <img data-placeholder="luxembourg-gardens" data-context="Luxembourg Gardens with fountain and palace" width="400" height="300" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23FF0083;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23FF008320;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad)'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial, sans-serif' font-size='18' fill='white' text-anchor='middle' dy='.3em' font-weight='500'%3E%D7%92%D7%A0%D7%99%20%D7%9C%D7%95%D7%A7%D7%A1%D7%9E%D7%91%D7%95%D7%A8%D7%92%3C/text%3E%3C/svg%3E" alt="גני לוקסמבורג">
+                            <div class="card-category">פארקים</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>גני לוקסמבורג</h3>
+                            <div class="card-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.7</span>
+                            </div>
+                            <p>פארק ציבורי מרהיב בסגנון צרפתי קלסי, עם גנים מעוצבים, פסלים, מזרקות ומגרשי משחקים לילדים.</p>
+                            <div class="card-meta">
+                                <span><i class="fas fa-clock"></i> 1-2 שעות</span>
+                                <span><i class="fas fa-child"></i> משפחות</span>
+                            </div>
+                            <a href="/contact" class="card-btn">תכננו ביקור</a>
+                        </div>
+                    </div>
+
+                    <!-- Seine River Cruise -->
+                    <div class="attraction-card-enhanced">
+                        <div class="card-image">
+                            <img data-placeholder="seine-cruise" data-context="Seine river cruise boat with Paris bridges" width="400" height="300" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23FF0083;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23FF008320;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad)'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial, sans-serif' font-size='18' fill='white' text-anchor='middle' dy='.3em' font-weight='500'%3E%D7%A9%D7%99%D7%99%D7%98%20%D7%91%D7%A1%D7%99%D7%99%D7%9F%3C/text%3E%3C/svg%3E" alt="שייט בסיין">
+                            <div class="card-category">חוויות</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>שייט בנהר הסיין</h3>
+                            <div class="card-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                            <p>חוויה רומנטית ייחודית - שייט בנהר הסיין עם נוף לכל האטרקציות המרכזיות של פריז מזווית מיוחדת.</p>
+                            <div class="card-meta">
+                                <span><i class="fas fa-clock"></i> 1 שעה</span>
+                                <span><i class="fas fa-ship"></i> שייט</span>
+                            </div>
+                            <a href="/contact" class="card-btn">תכננו ביקור</a>
+                        </div>
+                    </div>
+
+                    <!-- Disneyland Paris -->
+                    <div class="attraction-card-enhanced">
+                        <div class="card-image">
+                            <img data-placeholder="disneyland-paris" data-context="Disneyland Paris castle and theme park" width="400" height="300" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23FF0083;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23FF008320;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad)'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial, sans-serif' font-size='18' fill='white' text-anchor='middle' dy='.3em' font-weight='500'%3E%D7%93%D7%99%D7%A1%D7%A0%D7%99%D7%9C%D7%A0%D7%93%20%D7%A4%D7%A8%D7%99%D7%96%3C/text%3E%3C/svg%3E" alt="דיסנילנד פריז">
+                            <div class="card-category">למשפחות</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>דיסנילנד פריז</h3>
+                            <div class="card-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                            <p>פארק השעשועים המפורסם של דיסני - חוויה קסומה לכל המשפחה עם אטרקציות, מופעים ודמויות אהובות.</p>
+                            <div class="card-meta">
+                                <span><i class="fas fa-clock"></i> יום שלם</span>
+                                <span><i class="fas fa-users"></i> משפחות</span>
+                            </div>
+                            <a href="/contact" class="card-btn">תכננו ביקור</a>
+                        </div>
+                    </div>
+
+                    <!-- Sainte-Chapelle -->
+                    <div class="attraction-card-enhanced">
+                        <div class="card-image">
+                            <img data-placeholder="sainte-chapelle" data-context="Sainte Chapelle stained glass windows interior" width="400" height="300" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23FF0083;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23FF008320;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad)'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial, sans-serif' font-size='18' fill='white' text-anchor='middle' dy='.3em' font-weight='500'%3E%D7%A1%D7%A0%D7%98%20%D7%A9%D7%90%D7%A4%D7%9C%3C/text%3E%3C/svg%3E" alt="סנט שאפל">
+                            <div class="card-category">אדריכלות</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>סנט שאפל</h3>
+                            <div class="card-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                            <p>קפלה גותית מרהיבה עם חלונות ויטראז' מדהימים מהמאה ה-13 - אחת מפנינות האדריכלות הגותית.</p>
+                            <div class="card-meta">
+                                <span><i class="fas fa-clock"></i> 45 דקות</span>
+                                <span><i class="fas fa-gem"></i> ייחודי</span>
+                            </div>
+                            <a href="/contact" class="card-btn">תכננו ביקור</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Planning Tips Section -->
+        <section class="planning-tips">
+            <div class="container">
+                <h2 class="section-title centered">טיפים לתכנון הביקור</h2>
+                
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-ticket-alt"></i>
+                        </div>
+                        <h3>רכישת כרטיסים</h3>
+                        <p>מומלץ לרכוש כרטיסים מראש אונליין לאטרקציות המרכזיות. זה יחסוך לכם זמן רב בתורים ולעתים גם כסף. כדאי לשקול רכישת Paris Museum Pass שמאפשר כניסה חופשית למעל 60 אטרקציות.</p>
+                    </div>
+
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>תזמון הביקור</h3>
+                        <p>הגיעו מוקדם בבוקר (8:00-9:00) או מאוחר אחר הצהריים (אחרי 16:00) כדי להימנע מהמונים. ימי שלישי ורביעי בדרך כלל פחות עמוסים מסופי השבוע.</p>
+                    </div>
+
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-route"></i>
+                        </div>
+                        <h3>תכנון מסלול</h3>
+                        <p>קבצו אטרקציות לפי אזורים גיאוגרפיים כדי לחסוך זמן נסיעה. לדוגמה: מוזיאון הלובר, גני טווילרי והפלאס דה לה קונקורד נמצאים באותו אזור.</p>
+                    </div>
+
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <h3>טיול עם ילדים</h3>
+                        <p>לא חייבים לראות הכל! תכננו הפסקות בפארקים, קפצו למאפייה לקרואסון, ושמרו על קצב רגוע. הילדים יהנו יותר מחוויות קצרות ומגוונות מאשר מביקורים ארוכים במוזיאונים.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section compact">
+            <div class="container">
+                <div class="cta-content centered">
+                    <h2>צריכים עזרה בתכנון המסלול?</h2>
+                    <p>המדריכים המקומיים שלנו יעזרו לכם לבנות את המסלול המושלם</p>
+                    <a href="/contact" class="btn-primary large">צרו קשר</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Paris Guide</h3>
+                    <p>המדריך המקצועי שלכם לחוויה מושלמת בעיר האורות</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com/[facebook_handle]" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com/[instagram_handle]" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/[whatsapp_handle]" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>קישורים מהירים</h4>
+                    <ul>
+                        <li><a href="/attractions">אטרקציות</a></li>
+                        <li><a href="/about">אודות</a></li>
+                        <li><a href="/contact">צור קשר</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>יצירת קשר</h4>
+                    <ul class="contact-info">
+                        <li>[business_email]</li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:[business_phone]">[business_phone]</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> [business_address]</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>משפטי</h4>
+                    <ul>
+                        <li><a href="/privacy">מדיניות פרטיות</a></li>
+                        <li><a href="/terms">תנאי שימוש</a></li>
+                        <li><a href="/accessibility">הצהרת נגישות</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2024 Paris Guide. כל הזכויות שמורות.</p>
+                <p>Generated by <a href="https://zappy5.com" target="_blank">Zappy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/[business_phone]" class="whatsapp-float" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="/script.js"></script>
+
+
+<script>
+
+// Navbar Mobile Menu Toggle and Contrast Fix
+(function() {
+  // Use 'load' event instead of 'DOMContentLoaded' to ensure we run AFTER all other scripts
+  window.addEventListener('load', function() {
+    
+    // FIX MOBILE BUTTON CONTRAST
+    // Detect navbar background color and apply contrasting color to mobile buttons
+    const navbar = document.querySelector('.navbar, nav, header');
+    if (!navbar) {
+      console.log('[Navbar] Navbar element not found');
+      return;
+    }
+    
+    const computedStyle = window.getComputedStyle(navbar);
+    let bgColor = computedStyle.backgroundColor;
+    
+    console.log('[Navbar] Initial navbar background:', bgColor);
+    
+    // Check if background is transparent or rgba with 0 alpha
+    const isTransparent = bgColor === 'transparent' || 
+                         bgColor === 'rgba(0, 0, 0, 0)' ||
+                         (bgColor.startsWith('rgba') && bgColor.includes(', 0)'));
+    
+    if (isTransparent) {
+      // Check for background-image or gradient
+      const bgImage = computedStyle.backgroundImage;
+      if (bgImage && bgImage !== 'none') {
+        console.log('[Navbar] Navbar has background image/gradient, using dark text');
+        bgColor = 'rgb(240, 240, 240)'; // Assume light background
+      } else {
+        // Transparent navbar - check body background
+        const bodyBg = window.getComputedStyle(document.body).backgroundColor;
+        console.log('[Navbar] Navbar transparent, using body background:', bodyBg);
+        bgColor = bodyBg;
+      }
+    }
+    
+    // Calculate luminance to determine if background is light or dark
+    const rgb = bgColor.match(/\d+/g);
+    if (rgb && rgb.length >= 3) {
+      const r = parseInt(rgb[0]);
+      const g = parseInt(rgb[1]);
+      const b = parseInt(rgb[2]);
+      const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+      
+      // Don't apply color overrides - let Claude's CSS handle all colors
+      const mobileToggle = document.querySelector('.mobile-toggle');
+      const phoneBtn = document.querySelector('.phone-header-btn');
+      
+      console.log('[Navbar] Mobile buttons found - colors from Claude\'s CSS:', { 
+        bgColor, 
+        luminance: luminance.toFixed(2),
+        buttons: { mobileToggle: !!mobileToggle, phoneBtn: !!phoneBtn }
+      });
+      
+      // FIX ICON SIZES - Ensure SVGs are properly sized and visible
+      // INJECT CRITICAL CSS TO OVERRIDE ANY CONFLICTING RULES
+      const criticalCSS = document.createElement('style');
+      criticalCSS.id = 'zappy-mobile-nav-fix';
+      const htmlLang = document.documentElement.lang || 'en';
+      const isRTL = htmlLang === 'he' || htmlLang === 'ar';
+      
+      criticalCSS.textContent = `
+        /* Hide mobile buttons on desktop, show only on mobile */
+        @media (min-width: 769px) {
+          .mobile-toggle,
+          .phone-header-btn {
+            display: none !important;
+          }
+        }
+        
+        /* Show and position mobile buttons correctly on mobile */
+        @media (max-width: 768px) {
+          .mobile-toggle,
+          .phone-header-btn {
+            position: absolute !important;
+            top: 50% !important;
+            transform: translateY(-50%) !important;
+            z-index: 1001 !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            width: 44px !important;
+            height: 44px !important;
+            border-radius: 50% !important;
+            /* Background and colors from Claude's CSS - don't override */
+            border: none !important;
+            cursor: pointer !important;
+            padding: 8px !important;
+          }
+          
+          .mobile-toggle {
+            ${isRTL ? 'right: 20px !important; left: auto !important;' : 'left: 20px !important; right: auto !important;'}
+          }
+          
+          .phone-header-btn {
+            ${isRTL ? 'left: 20px !important; right: auto !important;' : 'right: 20px !important; left: auto !important;'}
+          }
+          
+          /* Ensure SVG icons are properly sized - colors from Claude's CSS */
+          .mobile-toggle svg,
+          .phone-header-btn svg {
+            width: 24px !important;
+            height: 24px !important;
+            /* Don't force display - let JavaScript control hamburger/close toggle */
+          }
+          
+          /* SVG path colors from Claude's CSS - don't override */
+        }
+      `;
+      
+      // Remove existing fix if present and inject new one
+      const existing = document.getElementById('zappy-mobile-nav-fix');
+      if (existing) existing.remove();
+      document.head.appendChild(criticalCSS);
+      
+      console.log('[Navbar] Critical CSS injected for mobile nav positioning');
+      
+      if (mobileToggle) {
+        // Also set inline styles as backup
+        mobileToggle.style.setProperty('position', 'absolute', 'important');
+        mobileToggle.style.setProperty('top', '50%', 'important');
+        mobileToggle.style.setProperty('transform', 'translateY(-50%)', 'important');
+        mobileToggle.style.setProperty('z-index', '1001', 'important');
+        
+        if (isRTL) {
+          mobileToggle.style.setProperty('right', '20px', 'important');
+          mobileToggle.style.setProperty('left', 'auto', 'important');
+        } else {
+          mobileToggle.style.setProperty('left', '20px', 'important');
+          mobileToggle.style.setProperty('right', 'auto', 'important');
+        }
+        
+        const hamburgerIcon = mobileToggle.querySelector('.hamburger-icon');
+        const closeIcon = mobileToggle.querySelector('.close-icon');
+        
+        if (hamburgerIcon) {
+          hamburgerIcon.style.setProperty('width', '24px', 'important');
+          hamburgerIcon.style.setProperty('height', '24px', 'important');
+          hamburgerIcon.style.setProperty('display', 'block', 'important'); // Show hamburger by default
+          console.log('[Navbar] Hamburger icon sized and shown');
+        }
+        if (closeIcon) {
+          closeIcon.style.setProperty('width', '24px', 'important');
+          closeIcon.style.setProperty('height', '24px', 'important');
+          closeIcon.style.setProperty('display', 'none', 'important'); // Hide close icon by default
+          console.log('[Navbar] Close icon sized and hidden');
+        }
+        
+        console.log('[Navbar] Mobile toggle positioned:', {
+          lang: htmlLang,
+          position: htmlLang === 'he' || htmlLang === 'ar' ? 'right: 20px' : 'left: 20px'
+        });
+      }
+      
+      if (phoneBtn) {
+        // Also set inline styles as backup
+        phoneBtn.style.setProperty('position', 'absolute', 'important');
+        phoneBtn.style.setProperty('top', '50%', 'important');
+        phoneBtn.style.setProperty('transform', 'translateY(-50%)', 'important');
+        phoneBtn.style.setProperty('z-index', '1001', 'important');
+        
+        if (isRTL) {
+          phoneBtn.style.setProperty('left', '20px', 'important');
+          phoneBtn.style.setProperty('right', 'auto', 'important');
+        } else {
+          phoneBtn.style.setProperty('right', '20px', 'important');
+          phoneBtn.style.setProperty('left', 'auto', 'important');
+        }
+        
+        const phoneIcon = phoneBtn.querySelector('svg');
+        if (phoneIcon) {
+          phoneIcon.style.width = '24px';
+          phoneIcon.style.height = '24px';
+          phoneIcon.setAttribute('width', '24');
+          phoneIcon.setAttribute('height', '24');
+          console.log('[Navbar] Phone icon sized to 24x24');
+        }
+        
+        console.log('[Navbar] Phone button positioned:', {
+          lang: htmlLang,
+          position: htmlLang === 'he' || htmlLang === 'ar' ? 'left: 20px' : 'right: 20px'
+        });
+      }
+    } else {
+      console.log('[Navbar] Could not parse background color:', bgColor);
+    }
+    
+    // MOBILE MENU TOGGLE
+   
+    const mobileToggle = document.getElementById('mobileToggle');
+    const navMenu = document.getElementById('navMenu');
+    
+    if (!mobileToggle || !navMenu) {
+      console.log('[Navbar] Mobile toggle or menu not found');
+      return;
+    }
+    
+    console.log('[Navbar] Initializing mobile menu...');
+    
+    // Remove any existing event listeners by cloning the button
+    const newToggle = mobileToggle.cloneNode(true);
+    mobileToggle.parentNode.replaceChild(newToggle, mobileToggle);
+    
+    // Toggle menu on button click - use newToggle now
+    newToggle.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      
+      const hamburgerIcon = this.querySelector('.hamburger-icon');
+      const closeIcon = this.querySelector('.close-icon');
+      const isActive = navMenu.classList.contains('active');
+      
+      if (isActive) {
+        // Close menu
+        navMenu.classList.remove('active');
+        if (hamburgerIcon) hamburgerIcon.style.setProperty('display', 'block', 'important');
+        if (closeIcon) closeIcon.style.setProperty('display', 'none', 'important');
+        document.body.style.overflow = '';
+        console.log('[Navbar] Menu closed');
+      } else {
+        // Open menu
+        navMenu.classList.add('active');
+        if (hamburgerIcon) hamburgerIcon.style.setProperty('display', 'none', 'important');
+        if (closeIcon) closeIcon.style.setProperty('display', 'block', 'important');
+        document.body.style.overflow = 'hidden';
+        console.log('[Navbar] Menu opened');
+      }
+    });
+    
+    // Close menu when clicking nav links
+    const navLinks = navMenu.querySelectorAll('a');
+    navLinks.forEach(function(link) {
+      link.addEventListener('click', function() {
+        const hamburgerIcon = newToggle.querySelector('.hamburger-icon');
+        const closeIcon = newToggle.querySelector('.close-icon');
+        
+        navMenu.classList.remove('active');
+        if (hamburgerIcon) hamburgerIcon.style.setProperty('display', 'block', 'important');
+        if (closeIcon) closeIcon.style.setProperty('display', 'none', 'important');
+        document.body.style.overflow = '';
+        console.log('[Navbar] Menu closed (link clicked)');
+      });
+    });
+    
+    // Phone button functionality
+    const phoneBtn = document.querySelector('.phone-header-btn');
+    if (phoneBtn) {
+      phoneBtn.addEventListener('click', function() {
+        // Get phone number from placeholder in page or use default
+        const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
+        const phoneNumber = phoneLinks.length > 0 
+          ? phoneLinks[0].getAttribute('href').replace('tel:', '')
+          : '[business_phone]';
+        
+        window.location.href = 'tel:' + phoneNumber;
+        console.log('[Navbar] Phone button clicked');
+      });
+    }
+    
+    console.log('[Navbar] Mobile menu initialized successfully');
+    
+    // === WHATSAPP BUTTON VISIBILITY FIX ===
+    // Ensure WhatsApp floating button is hidden on desktop and visible on mobile
+    const handleWhatsAppVisibility = function() {
+      const whatsappBtn = document.querySelector('.whatsapp-float, a[href*="wa.me"]');
+      if (whatsappBtn) {
+        const isDesktop = window.innerWidth >= 769;
+        if (isDesktop) {
+          whatsappBtn.style.setProperty('display', 'none', 'important');
+          whatsappBtn.style.setProperty('visibility', 'hidden', 'important');
+          whatsappBtn.style.setProperty('opacity', '0', 'important');
+          whatsappBtn.style.setProperty('pointer-events', 'none', 'important');
+          console.log('[WhatsApp] Button hidden on desktop');
+        } else {
+          whatsappBtn.style.removeProperty('display');
+          whatsappBtn.style.removeProperty('visibility');
+          whatsappBtn.style.removeProperty('opacity');
+          whatsappBtn.style.removeProperty('pointer-events');
+          console.log('[WhatsApp] Button visible on mobile');
+        }
+      }
+    };
+    
+    // Run on load
+    handleWhatsAppVisibility();
+    
+    // Run on resize with debouncing
+    let resizeTimer;
+    window.addEventListener('resize', function() {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(handleWhatsAppVisibility, 100);
+    });
+  });
+})();
+
+</script>
+
+<!-- Zappy Attribution Header Script -->
+<script>
+(function() {
+  var websiteId = '4510f8c3-3cd9-42c4-9678-8ee2abb84fee';
+  
+  // Don't show header in preview mode
+  var currentUrl = window.location.href;
+  var isPreview = currentUrl.includes('/preview/') || 
+                  currentUrl.includes('/preview-fullscreen/') || 
+                  currentUrl.includes('localhost:5001') ||
+                  currentUrl.includes('localhost:3000');
+  
+  if (isPreview) {
+    return; // Exit early in preview mode
+  }
+  
+  fetch('http://localhost:5001/api/website/' + websiteId + '/tier')
+    .then(function(response) { return response.json(); })
+    .then(function(data) {
+      if (data.showAttribution) {
+        var header = document.getElementById('zappy-attribution-header');
+        if (header) {
+          // Use dynamic announcement content if available
+          if (data.announcement && data.announcement.html) {
+            header.innerHTML = data.announcement.html;
+          }
+          // Apply fixed positioning styles inline (works for existing sites too)
+          header.style.cssText = 'position: fixed !important; top: 0 !important; left: 0 !important; right: 0 !important; width: 100% !important; z-index: 99999 !important; display: flex !important; justify-content: center !important; align-items: center !important; text-align: center !important; box-sizing: border-box !important;';
+          // Fix child elements that might have position: fixed from old CSS
+          var children = header.querySelectorAll('*');
+          for (var i = 0; i < children.length; i++) {
+            children[i].style.position = 'static';
+          }
+          // Get header height
+          var headerHeight = header.offsetHeight;
+          // Find and fix navbar to be fixed as well (prevents gap at top of page)
+          var navSelectors = ['nav', '.navbar', '.nav'];
+          var navbar = null;
+          for (var j = 0; j < navSelectors.length; j++) {
+            navbar = document.querySelector(navSelectors[j]);
+            if (navbar && navbar.id !== 'zappy-attribution-header') break;
+            navbar = null;
+          }
+          if (navbar) {
+            var navbarHeight = navbar.offsetHeight;
+            navbar.style.cssText += '; position: fixed !important; top: ' + headerHeight + 'px !important; left: 0 !important; right: 0 !important; width: 100% !important; z-index: 99998 !important;';
+            document.body.style.paddingTop = (headerHeight + navbarHeight) + 'px';
+          } else {
+            document.body.style.paddingTop = headerHeight + 'px';
+          }
+        }
+      }
+    })
+    .catch(function(error) {
+      console.error('Failed to check tier:', error);
+    });
+})();
+</script>
+    <div data-integration="accessibility:toolbar"></div>
+
+    <script id="zappy-mobile-submenu-script">
+    (function() {
+      function initMobileSubmenuToggles() {
+        if (window.innerWidth > 768) {
+          document.querySelectorAll('.mobile-submenu-toggle').forEach(function(btn) { btn.remove(); });
+          document.querySelectorAll('.sub-menu.mobile-expanded').forEach(function(menu) { menu.classList.remove('mobile-expanded'); });
+          return;
+        }
+        var items = document.querySelectorAll('.nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu)');
+        items.forEach(function(li) {
+          if (li.querySelector('.mobile-submenu-toggle')) return;
+          var submenu = li.querySelector('.sub-menu');
+          var parentLink = li.querySelector(':scope > a');
+          if (!submenu || !parentLink) return;
+          var toggleBtn = document.createElement('button');
+          toggleBtn.className = 'mobile-submenu-toggle';
+          toggleBtn.setAttribute('aria-label', 'Toggle submenu');
+          toggleBtn.setAttribute('type', 'button');
+          parentLink.insertAdjacentElement('afterend', toggleBtn);
+          toggleBtn.addEventListener('click', function(e) {
+            e.preventDefault(); e.stopPropagation();
+            document.querySelectorAll('.sub-menu.mobile-expanded').forEach(function(menu) {
+              if (menu !== submenu) { menu.classList.remove('mobile-expanded'); var t = menu.parentElement.querySelector('.mobile-submenu-toggle'); if(t) t.classList.remove('expanded'); }
+            });
+            submenu.classList.toggle('mobile-expanded');
+            toggleBtn.classList.toggle('expanded');
+          });
+        });
+      }
+      if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', initMobileSubmenuToggles); }
+      else { initMobileSubmenuToggles(); }
+      var resizeTimer; window.addEventListener('resize', function() { clearTimeout(resizeTimer); resizeTimer = setTimeout(initMobileSubmenuToggles, 250); });
+    })();
+    </script>
+</body></html>
